@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Surya Dakshin - Authentic South Indian dining, freshly brewed filter coffee, and traditional breakfast classics in Latur.">
+  <title>Surya Dakshin | Authentic South Indian Cuisine | Latur</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="top-bar" aria-label="Operating announcement">
+    <div class="container top-bar-inner">
+      <div class="status-indicator">
+        <span class="status-indicator-dot" aria-hidden="true"></span>
+        <span class="status-indicator-label">Service Open &bull; 07:00 AM &ndash; 11:00 PM</span>
+      </div>
+      <div class="quick-contact">
+        <span class="location-badge">Latur, Maharashtra</span>
+      </div>
+    </div>
+  </aside>
+
+  <header class="primary-header" id="masthead">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Surya Dakshin - Home">
+        <span class="brand-title">SURYA DAKSHIN</span>
+        <span class="brand-tagline">Tiffin &bull; Meals &bull; Filter Coffee</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary site navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu Matrix</a></li>
+          <li class="nav-item"><a href="#tradition" class="nav-link">Our Heritage</a></li>
+          <li class="nav-item"><a href="#outlets" class="nav-link">Outlets &amp; Timing</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <a href="#outlets" class="btn btn-secondary">Find Our Branch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-kicker">Traditional South Indian Craft</span>
+          <h1 id="hero-heading" class="hero-heading">
+            Pure ingredients, fermented batter, and freshly ground spices.
+          </h1>
+          <p class="hero-summary">
+            Serving crisp dosas, steamed idlis, and chicory-blended Kumbakonam filter coffee daily in Latur. Prepared fresh across morning, afternoon, and evening services.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-primary">View Today&rsquo;s Menu</a>
+            <a href="#outlets" class="btn btn-outline">Outlet Locations</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-image-wrapper">
+            <img 
+              src="assets/images/hero-dosa.jpg" 
+              alt="Crisp Masala Dosa served with fresh coconut chutney and sambar" 
+              class="hero-media"
+              loading="eager"
+            >
+            <figcaption class="hero-caption">Signature Ghee Roast &bull; Ground Fresh Every Morning</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Operational benchmarks">
+      <div class="container">
+        <ul class="metrics-grid">
+          <li class="metric-card">
+            <strong class="metric-value">100%</strong>
+            <span class="metric-label">Single-Source Desi Ghee</span>
+          </li>
+          <li class="metric-card">
+            <strong class="metric-value">07:00</strong>
+            <span class="metric-label">First Steamer Batch Daily</span>
+          </li>
+          <li class="metric-card">
+            <strong class="metric-value">4</strong>
+            <span class="metric-label">Traditional Chutney Profiles</span>
+          </li>
+          <li class="metric-card">
+            <strong class="metric-value">Fresh</strong>
+            <span class="metric-label">Stone-Ground Batter Only</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Curated Selections</span>
+          <h2 id="menu-heading" class="section-title">The Dakshin Menu</h2>
+          <p class="section-description">
+            All tiffins are served with hand-ground coconut chutney, roasted tomato chutney, and piping-hot drumstick sambar.
+          </p>
+        </div>
+
+        <div class="menu-controls" role="tablist" aria-label="Menu category filters">
+          <button class="filter-btn is-active" role="tab" aria-selected="true" data-filter="all">All Items</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="tiffin">Morning Tiffin</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="dosas">Signature Dosas</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="beverages">Brews &amp; Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-item-card" data-category="tiffin">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Steamed Thatte Idli</h3>
+              <span class="menu-item-price">&#8377;60</span>
+            </div>
+            <p class="menu-item-description">
+              Platter-sized steamed fermented rice cakes topped with desi ghee and spiced podi.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">Steamed</span>
+              <span class="tag">Gluten-Free</span>
+            </div>
+          </article>
+
+          <article class="menu-item-card" data-category="tiffin">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Medu Vada (2 Pcs)</h3>
+              <span class="menu-item-price">&#8377;70</span>
+            </div>
+            <p class="menu-item-description">
+              Crisp golden lentil fritters spiced with black peppercorns, fresh ginger, and curry leaves.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">Crisp</span>
+              <span class="tag">Traditional</span>
+            </div>
+          </article>
+
+          <article class="menu-item-card" data-category="dosas">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Benne Dosa</h3>
+              <span class="menu-item-price">&#8377;110</span>
+            </div>
+            <p class="menu-item-description">
+              Fluffy, thick crepe roasted on cast iron with pure white butter, spiced potato bhaji, and chutney.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">House Special</span>
+              <span class="tag">Cast Iron</span>
+            </div>
+          </article>
+
+          <article class="menu-item-card" data-category="dosas">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Ghee Karam Roast</h3>
+              <span class="menu-item-price">&#8377;120</span>
+            </div>
+            <p class="menu-item-description">
+              Paper-thin crisp dosa layered with spiced red chilli-garlic chutney paste and tempered ghee.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">Spicy</span>
+              <span class="tag">Desi Ghee</span>
+            </div>
+          </article>
+
+          <article class="menu-item-card" data-category="beverages">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Kumbakonam Degree Coffee</h3>
+              <span class="menu-item-price">&#8377;35</span>
+            </div>
+            <p class="menu-item-description">
+              First-decoction coffee brewed with plantation Arabica and chicory, frothed in a brass davarah.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">Brass Davarah</span>
+              <span class="tag">Hot</span>
+            </div>
+          </article>
+
+          <article class="menu-item-card" data-category="beverages">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Neer Moru (Spiced Buttermilk)</h3>
+              <span class="menu-item-price">&#8377;30</span>
+            </div>
+            <p class="menu-item-description">
+              Churned curd tempered with roasted cumin, green chillies, ginger, and bruised curry leaves.
+            </p>
+            <div class="menu-item-meta">
+              <span class="tag">Cooling</span>
+              <span class="tag">Digestive</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="heritage-section" id="tradition" aria-labelledby="heritage-heading">
+      <div class="container heritage-grid">
+        <div class="heritage-text">
+          <span class="section-kicker">Standards &amp; Sourcing</span>
+          <h2 id="heritage-heading" class="section-title">The Foundation of Our Kitchen</h2>
+          <p>
+            We do not use pre-mixed batters, soda, or commercial leavening agents. Every batch of batter undergoes a minimum 14-hour natural fermentation cycle calibrated for Latur's local climate.
+          </p>
+          <ul class="heritage-specs">
+            <li>
+              <strong>Cast-Iron Griddles:</strong> Dosas are roasted solely on seasoned iron tavas for distinct crispness.
+            </li>
+            <li>
+              <strong>Stone-Ground Dal:</strong> Urad and raw rice are processed daily in heavy stone wet grinders to preserve grain texture.
+            </li>
+            <li>
+              <strong>Brass Decoction:</strong> Filter coffee is extracted slowly drop by drop using pure plantation beans.
+            </li>
+          </ul>
+        </div>
+
+        <div class="heritage-card">
+          <h3 class="heritage-card-title">Daily Kitchen Schedule</h3>
+          <dl class="schedule-list">
+            <div class="schedule-entry">
+              <dt>06:30 AM</dt>
+              <dd>Fresh Sambar &amp; Chutney Tempering</dd>
+            </div>
+            <div class="schedule-entry">
+              <dt>07:00 AM &ndash; 11:30 AM</dt>
+              <dd>Morning Tiffin &amp; Filter Coffee Service</dd>
+            </div>
+            <div class="schedule-entry">
+              <dt>12:00 PM &ndash; 03:30 PM</dt>
+              <dd>South Indian Meals &amp; Rice Varieties</dd>
+            </div>
+            <div class="schedule-entry">
+              <dt>04:30 PM &ndash; 11:00 PM</dt>
+              <dd>Evening Roast &amp; Special Tiffins</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="outlets-section" id="outlets" aria-labelledby="outlets-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Visit Us</span>
+          <h2 id="outlets-heading" class="section-title">Latur Outlet &amp; Service Hours</h2>
+        </div>
+
+        <div class="outlet-card">
+          <div class="outlet-details">
+            <h3 class="outlet-name">Surya Dakshin &ndash; Main Outlet</h3>
+            <address class="outlet-address">
+              Station Road, Near Shivaji Chowk,<br>
+              Latur, Maharashtra &ndash; 413512
+            </address>
+
+            <div class="outlet-timings">
+              <strong>Operating Hours:</strong>
+              <p>Monday through Sunday: 07:00 AM &ndash; 11:00 PM</p>
+              <span class="outlet-note">Takeaway and dine-in open throughout operational hours.</span>
+            </div>
+
+            <div class="outlet-actions">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Get Directions on Google Maps
+              </a>
+              <a href="tel:+910000000000" class="btn btn-outline">
+                Call Outlet
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <span class="footer-brand">SURYA DAKSHIN</span>
+        <p class="footer-copy">
+          Authentic South Indian hospitality, tiffins, and specialty brews in Latur, Maharashtra.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#menu">Menu Matrix</a></li>
+          <li><a href="#tradition">Our Heritage</a></li>
+          <li><a href="#outlets">Location &amp; Timings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">Service Standards</h4>
+        <ul class="footer-links">
+          <li>Strict Vegetarian Preparation</li>
+          <li>Natural Fermentation Only</li>
+          <li>Hygienic Open-Counter Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Surya Dakshin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
