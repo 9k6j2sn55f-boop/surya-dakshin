@@ -1,40 +1,43 @@
 /* ==========================================================================
-   1. BRAND TOKENS (RED, SKY BLUE, YELLOW)
+   SURYA DAKSHIN - EXACT SIGNBOARD BRAND PALETTE
    ========================================================================== */
 :root {
-  /* Brand Core Colors */
-  --brand-red: #dc2626;
-  --brand-red-dark: #b91c1c;
-  --brand-skyblue: #38bdf8;
-  --brand-skyblue-dark: #0284c7;
-  --brand-yellow: #facc15;
-  --brand-yellow-dark: #eab308;
+  /* Brand Signboard Identity */
+  --brand-red: #c81e27;             /* Signboard crimson red */
+  --brand-red-dark: #9e141c;        /* Deep shade for buttons and hovers */
+  --brand-blue: #1f6fc8;            /* Signboard oval cobalt sky-blue */
+  --brand-blue-dark: #155196;       /* Deep navy blue */
+  --brand-sun-yellow: #f8b804;      /* Radiant sunburst gold */
+  --brand-sun-accent: #ffa700;      /* Deep amber edge */
 
-  /* Surfaces & High-Contrast Backgrounds */
-  --surface-base: #0c0e12;
-  --surface-card: #151921;
-  --surface-raised: #1e2430;
+  /* Neutral Surfaces (Clean, high-contrast dining theme) */
+  --bg-page: #f9f8f5;               /* Warm parchment clean background */
+  --bg-surface: #ffffff;            /* Pure white content cards */
+  --bg-surface-soft: #f2efe9;       /* Secondary neutral container */
+  --bg-dark: #141110;               /* Deep cast footer & contrast strip */
 
-  /* Text Colors */
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  /* Text & Border Tokens */
+  --text-dark: #1e1917;             /* High readability charcoal */
+  --text-muted: #5e5751;            /* Secondary body */
+  --text-light: #ffffff;            /* White on red/blue sections */
+  --border-light: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.16);
 
-  /* Structural Borders */
-  --border-line: rgba(255, 255, 255, 0.08);
-  --border-active: var(--brand-skyblue);
+  /* Typography Stacks */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+  --font-heading: "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* Typography & Layout */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Charter", "Cambria", Georgia, serif;
-  --max-width: 1200px;
-  --radius: 6px;
-  --transition: 0.2s ease-in-out;
+  /* Global Layout */
+  --max-w: 1200px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.09);
+  --transition: 0.18s ease-in-out;
 }
 
-/* ==========================================================================
-   2. RESET & BASE LAYOUT
-   ========================================================================== */
+/* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -42,15 +45,16 @@
 }
 
 body {
-  background-color: var(--surface-base);
-  color: var(--text-main);
+  background-color: var(--bg-page);
+  color: var(--text-dark);
   font-family: var(--font-sans);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   width: 92%;
-  max-width: var(--max-width);
+  max-width: var(--max-w);
   margin: 0 auto;
 }
 
@@ -60,50 +64,52 @@ a {
 }
 
 /* ==========================================================================
-   3. HEADER & STATUS BAR
+   TOP MARQUEE / STATUS BAR (Inspired by the LED scroll on signboard)
    ========================================================================== */
-.top-bar {
-  background-color: #060709;
-  border-bottom: 1px solid var(--border-line);
+.marquee-bar {
+  background-color: var(--brand-red-dark);
+  color: var(--text-light);
+  font-size: 0.82rem;
+  font-weight: 600;
   padding: 8px 0;
-  font-size: 0.8rem;
+  border-bottom: 2px solid var(--brand-sun-yellow);
 }
 
-.top-bar-inner {
+.marquee-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
-.status-badge {
+.marquee-badge {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--brand-yellow);
-  font-weight: 600;
+  color: var(--brand-sun-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.status-dot {
+.marquee-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--brand-yellow);
-  box-shadow: 0 0 8px var(--brand-yellow);
+  background: var(--brand-sun-yellow);
+  box-shadow: 0 0 8px var(--brand-sun-yellow);
 }
 
-.location-tag {
-  color: var(--brand-skyblue);
-  font-weight: 500;
-}
-
+/* ==========================================================================
+   PRIMARY NAVIGATION (Crimson Signboard Header)
+   ========================================================================== */
 .site-header {
+  background-color: var(--brand-red);
+  color: var(--text-light);
+  padding: 14px 0;
   position: sticky;
   top: 0;
-  background: rgba(12, 14, 18, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-line);
-  padding: 16px 0;
-  z-index: 50;
+  z-index: 100;
+  box-shadow: 0 4px 18px rgba(200, 30, 39, 0.25);
 }
 
 .header-inner {
@@ -112,148 +118,198 @@ a {
   align-items: center;
 }
 
-.brand-title {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--brand-red);
-  letter-spacing: 0.04em;
-}
-
-.brand-subtitle {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--brand-yellow);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.nav-links {
+/* Exact Signboard Medallion Logo */
+.brand-group {
   display: flex;
-  gap: 28px;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-oval-logo {
+  width: 90px;
+  height: 52px;
+  background: var(--brand-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  flex-shrink: 0;
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-en {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-light);
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.brand-mr {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--brand-sun-yellow);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 26px;
   list-style: none;
 }
 
-.nav-links a {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+.nav-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
   transition: color var(--transition);
 }
 
-.nav-links a:hover {
-  color: var(--brand-skyblue);
+.nav-link:hover {
+  color: var(--brand-sun-yellow);
 }
 
-/* Hamburger */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.nav-toggle span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--text-main);
-}
-
-/* ==========================================================================
-   4. BUTTONS
-   ========================================================================== */
+/* Common Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: center;
+  padding: 10px 22px;
   font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: var(--radius);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
   transition: var(--transition);
+  cursor: pointer;
 }
 
-.btn-red {
-  background-color: var(--brand-red);
-  color: #fff;
+.btn-yellow {
+  background-color: var(--brand-sun-yellow);
+  color: #1a1500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.btn-red:hover {
-  background-color: var(--brand-red-dark);
+.btn-yellow:hover {
+  background-color: #ffd033;
 }
 
-.btn-outline-sky {
-  border: 1px solid var(--brand-skyblue);
-  color: var(--brand-skyblue);
+.btn-blue {
+  background-color: var(--brand-blue);
+  color: var(--text-light);
 }
 
-.btn-outline-sky:hover {
-  background-color: var(--brand-skyblue);
-  color: #0c0e12;
+.btn-blue:hover {
+  background-color: var(--brand-blue-dark);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: var(--text-light);
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
 }
 
 /* ==========================================================================
-   5. HERO & HIGHLIGHTS
+   HERO BANNER (Signboard Red Backed with Oval Emblem Highlights)
    ========================================================================== */
 .hero {
-  padding: 72px 0 56px;
-  border-bottom: 1px solid var(--border-line);
+  background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
+  color: var(--text-light);
+  padding: 64px 0 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(31, 111, 200, 0.35) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.25fr 0.85fr;
   align-items: center;
   gap: 48px;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-tag {
+.hero-kicker {
   display: inline-block;
-  color: var(--brand-yellow);
-  font-size: 0.8rem;
-  font-weight: 700;
+  background-color: var(--brand-blue);
+  color: var(--text-light);
+  font-size: 0.76rem;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 12px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .hero h1 {
-  font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 4.4vw, 3.6rem);
   line-height: 1.15;
-  color: var(--text-main);
+  letter-spacing: 0.01em;
   margin-bottom: 18px;
 }
 
 .hero h1 span {
-  color: var(--brand-red);
+  color: var(--brand-sun-yellow);
 }
 
 .hero p {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  margin-bottom: 28px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
   max-width: 520px;
+  margin-bottom: 28px;
 }
 
 .hero-actions {
   display: flex;
   gap: 14px;
+  flex-wrap: wrap;
 }
 
+/* Hero Badge Card */
 .hero-card {
-  background: var(--surface-card);
-  border: 1px solid var(--border-line);
-  padding: 32px;
-  border-radius: var(--radius);
-  border-top: 3px solid var(--brand-skyblue);
+  background: var(--bg-surface);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  border-top: 5px solid var(--brand-sun-yellow);
+  border-left: 4px solid var(--brand-blue);
 }
 
 .hero-card h3 {
-  font-size: 1.1rem;
-  color: var(--brand-yellow);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--brand-red);
   margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .hero-card ul {
@@ -261,21 +317,22 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  font-size: 0.92rem;
   color: var(--text-muted);
-  font-size: 0.9rem;
 }
 
 .hero-card li strong {
-  color: var(--text-main);
+  color: var(--text-dark);
 }
 
 /* ==========================================================================
-   6. METRICS STRIP
+   METRICS BANNER
    ========================================================================== */
 .metrics {
-  background: var(--surface-card);
-  border-bottom: 1px solid var(--border-line);
-  padding: 28px 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+  padding: 30px 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .metrics-grid {
@@ -285,33 +342,32 @@ a {
 }
 
 .metric-item {
-  border-left: 2px solid var(--brand-red);
+  border-left: 3px solid var(--brand-blue);
   padding-left: 18px;
 }
 
 .metric-num {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  color: var(--brand-yellow);
-  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  color: var(--brand-red);
   line-height: 1;
 }
 
 .metric-label {
-  font-size: 0.8rem;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 4px;
-  display: block;
+  margin-top: 6px;
 }
 
 /* ==========================================================================
-   7. MENU SECTION & FILTER CONTROLS
+   MENU MATRIX SECTION
    ========================================================================== */
 .menu {
   padding: 72px 0;
-  border-bottom: 1px solid var(--border-line);
 }
 
 .section-head {
@@ -319,19 +375,22 @@ a {
 }
 
 .section-kicker {
-  color: var(--brand-skyblue);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--brand-blue);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 .section-head h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 2.2rem;
+  color: var(--brand-red);
+  letter-spacing: -0.01em;
   margin-top: 4px;
 }
 
+/* Filter Bar */
 .filter-bar {
   display: flex;
   gap: 10px;
@@ -341,124 +400,155 @@ a {
 }
 
 .filter-pill {
-  background: var(--surface-card);
-  border: 1px solid var(--border-line);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
   color: var(--text-muted);
   padding: 8px 18px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
   cursor: pointer;
   white-space: nowrap;
   transition: var(--transition);
 }
 
 .filter-pill:hover {
-  border-color: var(--brand-skyblue);
-  color: var(--text-main);
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
 }
 
 .filter-pill.is-active {
-  background-color: var(--brand-skyblue);
-  border-color: var(--brand-skyblue);
-  color: #0c0e12;
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+  color: var(--text-light);
 }
 
+/* Menu Grid & Item Cards */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 22px;
 }
 
 .item-card {
-  background: var(--surface-card);
-  border: 1px solid var(--border-line);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
   padding: 24px;
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform var(--transition), border-color var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
+  border-top: 3px solid transparent;
 }
 
 .item-card:hover {
-  border-color: rgba(56, 189, 248, 0.4);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--brand-red);
 }
 
 .item-top {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 12px;
   margin-bottom: 8px;
 }
 
 .item-title {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
 }
 
 .item-price {
-  color: var(--brand-yellow);
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--brand-red);
+  white-space: nowrap;
 }
 
 .item-desc {
-  color: var(--text-muted);
   font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .badge-row {
   display: flex;
   gap: 6px;
+  flex-wrap: wrap;
   margin-top: auto;
 }
 
 .badge {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--brand-skyblue);
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  padding: 2px 8px;
-  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand-blue-dark);
+  background-color: rgba(31, 111, 200, 0.08);
+  border: 1px solid rgba(31, 111, 200, 0.2);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
-   8. OUTLET & FOOTER
+   OUTLET LOCATION & SERVICE BOX
    ========================================================================== */
 .outlet-box {
-  background: var(--surface-card);
-  border: 1px solid var(--border-line);
-  border-left: 4px solid var(--brand-red);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-left: 6px solid var(--brand-red);
   padding: 36px;
-  border-radius: var(--radius);
-  margin-top: 28px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-top: 24px;
 }
 
 .outlet-box h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--brand-red);
   margin-bottom: 8px;
 }
 
 .outlet-box p {
   color: var(--text-muted);
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 16px;
 }
 
+.outlet-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   SITE FOOTER
+   ========================================================================== */
 .site-footer {
-  background: #060709;
+  background-color: var(--bg-dark);
+  color: rgba(255, 255, 255, 0.7);
   padding: 48px 0 24px;
-  border-top: 1px solid var(--border-line);
-  font-size: 0.85rem;
-  color: var(--text-dim);
+  border-top: 4px solid var(--brand-sun-yellow);
+  font-size: 0.88rem;
 }
 
-/* Mobile Breakpoints */
-@media (max-width: 900px) {
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
@@ -467,6 +557,8 @@ a {
 @media (max-width: 640px) {
   .menu-grid { grid-template-columns: 1fr; }
   .metrics-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
+  .nav-menu { display: none; }
+  .hero { padding: 48px 0; }
+  .btn { width: 100%; }
+  .hero-actions, .outlet-actions { flex-direction: column; }
 }
