@@ -66,7 +66,7 @@ function initNavigation() {
  */
 function initMenuFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const menuItems = document.querySelectorAll('.menu-item-card');
+  const menuItems = document.querySelectorAll('.ledger-card');
 
   if (!filterButtons.length || !menuItems.length) return;
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Surya Dakshin Latur</title>
+  <title>Menu Matrix | Surya Dakshin Latur</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,13 +53,13 @@
       <nav aria-label="Primary navigation">
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="menu.html" class="nav-link is-current">Menu</a></li>
+          <li><a href="menu.html" class="nav-link is-current">Menu Matrix</a></li>
           <li><a href="about.html" class="nav-link">Our Heritage</a></li>
           <li><a href="franchise.html" class="nav-link">Franchise</a></li>
         </ul>
       </nav>
 
-      <a href="#menuGrid" class="btn btn-yellow">Browse Menu</a>
+      <a href="tel:+917447222888" class="btn btn-yellow">Helpline: 7447222888</a>
     </div>
   </header>
 
@@ -67,165 +67,202 @@
     <section class="hero" style="padding: 48px 0 56px;">
       <div class="container">
         <span class="hero-kicker">Fresh Daily &bull; 03:30 AM &ndash; 11:00 PM</span>
-        <h1>The Surya Dakshin Menu.</h1>
+        <h1>The Dakshin Menu Matrix.</h1>
         <p>
-          Prepared continuously throughout the day. Served fresh with coconut chutney, tomato chutney, and hot drumstick sambar.
+          Served hot across all 6 Latur branches with fresh coconut chutney, tomato chutney, and stone-ground sambar.
         </p>
       </div>
     </section>
 
-    <!-- Menu Section -->
     <section class="menu">
       <div class="container">
-        <!-- Interactive Category Filters -->
+        <!-- Filter Controls -->
         <div class="filter-bar">
-          <button class="filter-pill is-active" data-filter="all">All Items</button>
+          <button class="filter-pill is-active" data-filter="all">All Offerings</button>
           <button class="filter-pill" data-filter="idli-vada">Idli &amp; Vada</button>
           <button class="filter-pill" data-filter="dosas">Cast-Iron Dosas</button>
           <button class="filter-pill" data-filter="uttapam">Uttapam &amp; Upma</button>
           <button class="filter-pill" data-filter="beverages">Brews &amp; Drinks</button>
         </div>
 
-        <!-- Menu Cards Grid -->
+        <!-- Ledger Grid -->
         <div class="menu-grid" id="menuGrid">
-          <!-- Idli & Vada -->
-          <article class="item-card" data-category="idli-vada">
-            <div class="item-top">
-              <h3 class="item-title">Steamed Thatte Idli</h3>
-              <span class="item-price">&#8377;60</span>
+          
+          <article class="ledger-card" data-category="idli-vada">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Steamed Thatte Idli</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;60</span>
+              </div>
+              <p class="ledger-desc">Platter-sized steamed fermented rice cakes topped with desi ghee and spiced gunpowder podi.</p>
             </div>
-            <p class="item-desc">Platter-sized steamed fermented rice cakes topped with pure desi ghee and spiced gunpowder podi.</p>
-            <div class="badge-row"><span class="badge">Steamed</span><span class="badge">Desi Ghee</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Steamed</span>
+              <span class="ledger-note">Desi Ghee</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="idli-vada">
-            <div class="item-top">
-              <h3 class="item-title">Button Ghee Sambar Idli</h3>
-              <span class="item-price">&#8377;80</span>
+          <article class="ledger-card" data-category="idli-vada">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Button Ghee Sambar Idli</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;80</span>
+              </div>
+              <p class="ledger-desc">Mini steamed idlis submerged in bubbling drumstick sambar garnished with fresh coriander and ghee.</p>
             </div>
-            <p class="item-desc">Mini steamed idlis submerged in rich, bubbling drumstick sambar garnished with fresh coriander and ghee.</p>
-            <div class="badge-row"><span class="badge">Sambar Dip</span><span class="badge">Bestseller</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Sambar Dip</span>
+              <span class="ledger-note">Bestseller</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="idli-vada">
-            <div class="item-top">
-              <h3 class="item-title">Medu Vada (2 Pcs)</h3>
-              <span class="item-price">&#8377;70</span>
+          <article class="ledger-card" data-category="idli-vada">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Medu Vada (2 Pcs)</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;70</span>
+              </div>
+              <p class="ledger-desc">Crisp golden whole urad fritters spiced with crushed black peppercorns, ginger, and curry leaves.</p>
             </div>
-            <p class="item-desc">Crisp golden whole urad fritters spiced with crushed black peppercorns, ginger, and fresh curry leaves.</p>
-            <div class="badge-row"><span class="badge">Crisp</span><span class="badge">Tempered</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Crisp</span>
+              <span class="ledger-note">Tempered</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="idli-vada">
-            <div class="item-top">
-              <h3 class="item-title">Idli Vada Combo</h3>
-              <span class="item-price">&#8377;85</span>
+          <article class="ledger-card" data-category="idli-vada">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Idli Vada Combo</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;85</span>
+              </div>
+              <p class="ledger-desc">One classic steamed idli paired with one crisp medu vada, served with dual chutneys and sambar.</p>
             </div>
-            <p class="item-desc">One classic steamed idli paired with one crisp medu vada, served with dual chutneys and sambar.</p>
-            <div class="badge-row"><span class="badge">Breakfast Combo</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Tiffin Combo</span>
+            </div>
           </article>
 
-          <!-- Dosas -->
-          <article class="item-card" data-category="dosas">
-            <div class="item-top">
-              <h3 class="item-title">Davangere Benne Dosa</h3>
-              <span class="item-price">&#8377;110</span>
+          <article class="ledger-card" data-category="dosas">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Davangere Benne Dosa</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;110</span>
+              </div>
+              <p class="ledger-desc">Thick, golden crepe roasted on cast iron with pure white butter, served with aloo bhaji and coconut chutney.</p>
             </div>
-            <p class="item-desc">Thick, golden crepe roasted on cast iron with pure white butter, served with aloo bhaji and coconut chutney.</p>
-            <div class="badge-row"><span class="badge">House Special</span><span class="badge">White Butter</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">House Special</span>
+              <span class="ledger-note">White Butter</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="dosas">
-            <div class="item-top">
-              <h3 class="item-title">Ghee Karam Podi Roast</h3>
-              <span class="item-price">&#8377;120</span>
+          <article class="ledger-card" data-category="dosas">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Ghee Karam Podi Roast</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;120</span>
+              </div>
+              <p class="ledger-desc">Paper-thin crisp dosa layered with spiced red chili-garlic paste and generous roasted desi ghee.</p>
             </div>
-            <p class="item-desc">Paper-thin crisp dosa layered with spiced red chili-garlic chutney paste and generous roasted desi ghee.</p>
-            <div class="badge-row"><span class="badge">Spicy</span><span class="badge">Desi Ghee</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Spicy</span>
+              <span class="ledger-note">Desi Ghee</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="dosas">
-            <div class="item-top">
-              <h3 class="item-title">Mysore Masala Dosa</h3>
-              <span class="item-price">&#8377;105</span>
+          <article class="ledger-card" data-category="dosas">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Mysore Masala Dosa</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;105</span>
+              </div>
+              <p class="ledger-desc">Crisp crepe lined with tangy Mysore red paste, filled with mild spiced potato crumble.</p>
             </div>
-            <p class="item-desc">Crisp crepe lined with tangy Mysore red paste, filled with spiced potato crumble and coriander.</p>
-            <div class="badge-row"><span class="badge">Classic</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Classic</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="dosas">
-            <div class="item-top">
-              <h3 class="item-title">Onion Rava Masala Dosa</h3>
-              <span class="item-price">&#8377;115</span>
+          <article class="ledger-card" data-category="dosas">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Onion Rava Masala Dosa</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;115</span>
+              </div>
+              <p class="ledger-desc">Lacy semolina crepe with browned onions, green chillies, and cumin seeds, roasted extra crisp.</p>
             </div>
-            <p class="item-desc">Lacy semolina crepe with browned onions, green chillies, and cumin seeds, roasted extra crisp.</p>
-            <div class="badge-row"><span class="badge">Extra Crisp</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Extra Crisp</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="dosas">
-            <div class="item-top">
-              <h3 class="item-title">Plain Ghee Roast</h3>
-              <span class="item-price">&#8377;90</span>
+          <article class="ledger-card" data-category="uttapam">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Onion Tomato Uttapam</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;95</span>
+              </div>
+              <p class="ledger-desc">Thick fermented pancake loaded with finely chopped onions, juicy tomatoes, and green chillies.</p>
             </div>
-            <p class="item-desc">Traditional golden paper-thin crepe roasted with pure desi ghee. Light, crisp, and fragrant.</p>
-            <div class="badge-row"><span class="badge">Desi Ghee</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Cast Iron</span>
+            </div>
           </article>
 
-          <!-- Uttapam & Upma -->
-          <article class="item-card" data-category="uttapam">
-            <div class="item-top">
-              <h3 class="item-title">Onion Tomato Uttapam</h3>
-              <span class="item-price">&#8377;95</span>
+          <article class="ledger-card" data-category="uttapam">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Rava Upma</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;50</span>
+              </div>
+              <p class="ledger-desc">Roasted semolina tempered with mustard seeds, ginger, curry leaves, cashews, and ghee.</p>
             </div>
-            <p class="item-desc">Thick, spongy fermented pancake loaded with finely chopped onions, juicy tomatoes, and green chillies.</p>
-            <div class="badge-row"><span class="badge">Cast Iron</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Morning Warm</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="uttapam">
-            <div class="item-top">
-              <h3 class="item-title">Ghee Podi Uttapam</h3>
-              <span class="item-price">&#8377;105</span>
+          <article class="ledger-card" data-category="beverages">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Kumbakonam Degree Coffee</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;35</span>
+              </div>
+              <p class="ledger-desc">First-decoction coffee brewed with plantation Arabica and chicory, frothed in a brass davarah.</p>
             </div>
-            <p class="item-desc">Soft thick uttapam dusted generously with spicy podi powder and drenched in pure melted ghee.</p>
-            <div class="badge-row"><span class="badge">Desi Ghee</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Brass Davarah</span>
+              <span class="ledger-note">Hot</span>
+            </div>
           </article>
 
-          <article class="item-card" data-category="uttapam">
-            <div class="item-top">
-              <h3 class="item-title">Rava Upma</h3>
-              <span class="item-price">&#8377;50</span>
+          <article class="ledger-card" data-category="beverages">
+            <div>
+              <div class="ledger-top">
+                <h3 class="ledger-title">Spiced Neer Moru</h3>
+                <span class="ledger-leader"></span>
+                <span class="ledger-price">&#8377;30</span>
+              </div>
+              <p class="ledger-desc">Cooling churned buttermilk tempered with roasted cumin, crushed green chillies, and ginger.</p>
             </div>
-            <p class="item-desc">Roasted semolina tempered with mustard seeds, ginger, curry leaves, cashews, and ghee.</p>
-            <div class="badge-row"><span class="badge">Fresh Morning</span></div>
+            <div class="ledger-notes">
+              <span class="ledger-note">Digestive</span>
+              <span class="ledger-note">Cooling</span>
+            </div>
           </article>
 
-          <!-- Beverages -->
-          <article class="item-card" data-category="beverages">
-            <div class="item-top">
-              <h3 class="item-title">Kumbakonam Degree Coffee</h3>
-              <span class="item-price">&#8377;35</span>
-            </div>
-            <p class="item-desc">First-decoction coffee brewed with plantation Arabica and chicory, frothed in a brass davarah.</p>
-            <div class="badge-row"><span class="badge">Brass Davarah</span><span class="badge">Hot</span></div>
-          </article>
-
-          <article class="item-card" data-category="beverages">
-            <div class="item-top">
-              <h3 class="item-title">Spiced Neer Moru</h3>
-              <span class="item-price">&#8377;30</span>
-            </div>
-            <p class="item-desc">Cooling churned buttermilk tempered with roasted cumin, crushed green chillies, and ginger.</p>
-            <div class="badge-row"><span class="badge">Digestive</span></div>
-          </article>
-
-          <article class="item-card" data-category="beverages">
-            <div class="item-top">
-              <h3 class="item-title">Badam Milk (Hot / Cold)</h3>
-              <span class="item-price">&#8377;50</span>
-            </div>
-            <p class="item-desc">Slow-boiled milk infused with crushed almond paste, saffron strands, and cardamoms.</p>
-            <div class="badge-row"><span class="badge">Rich</span></div>
-          </article>
         </div>
       </div>
     </section>
@@ -235,7 +272,7 @@
     <div class="container footer-inner">
       <div>
         <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 4px;">SURYA DAKSHIN</strong>
-        <p>Station Road, Near Shivaji Chowk, Latur &bull; 413512</p>
+        <p>Operating Since 2002 &bull; 6 Outlets Across Latur &bull; Contact: 7447222888</p>
       </div>
       <div>
         <p>&copy; 2026 Surya Dakshin. 03:30 AM &ndash; 11:00 PM Daily.</p>
