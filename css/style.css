@@ -562,3 +562,10 @@ a {
   .btn { width: 100%; }
   .hero-actions, .outlet-actions { flex-direction: column; }
 }
+
+/* Active Nav Indicator */
+.nav-link.is-current {
+  color: var(--brand-sun-yellow) !important;
+  border-bottom: 2px solid var(--brand-sun-yellow);
+  padding-bottom: 2px;
+}

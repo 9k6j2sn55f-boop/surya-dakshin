@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Matrix | Surya Dakshin Latur</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Marquee -->
+  <aside class="marquee-bar">
+    <div class="container marquee-inner">
+      <div class="marquee-badge">
+        <span class="marquee-dot"></span>
+        <span>Service Open &bull; 07:00 AM &ndash; 11:00 PM</span>
+      </div>
+      <div>
+        <span>Station Road, Latur &bull; 100% Pure Vegetarian</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="site-header" id="masthead">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-group" aria-label="Surya Dakshin Home">
+        <div class="brand-oval-logo" aria-hidden="true">
+          <svg viewBox="0 0 160 100" width="100%" height="100%">
+            <ellipse cx="80" cy="50" rx="76" ry="46" fill="#1f6fc8" stroke="#ffffff" stroke-width="2"/>
+            <g transform="translate(62, 50)">
+              <circle cx="0" cy="0" r="28" fill="#f8b804" stroke="#e09b00" stroke-width="1.5"/>
+              <path d="M0 -34 L4 -28 L-4 -28 Z" fill="#f8b804"/>
+              <path d="M0 34 L4 28 L-4 28 Z" fill="#f8b804"/>
+              <path d="M-34 0 L-28 4 L-28 -4 Z" fill="#f8b804"/>
+              <path d="M34 0 L28 4 L28 -4 Z" fill="#f8b804"/>
+              <path d="M-24 -24 L-20 -18 L-26 -20 Z" fill="#f8b804"/>
+              <path d="M24 24 L20 18 L26 20 Z" fill="#f8b804"/>
+              <path d="M-24 24 L-20 18 L-26 20 Z" fill="#f8b804"/>
+              <path d="M24 -24 L20 -18 L26 -20 Z" fill="#f8b804"/>
+            </g>
+            <text x="76" y="55" font-family="'Noto Sans Devanagari', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#c81e27" stroke="#ffffff" stroke-width="1.2" text-anchor="middle">सूर्या</text>
+            <text x="88" y="74" font-family="'Noto Sans Devanagari', sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">दक्षिण</text>
+          </svg>
+        </div>
+
+        <div class="brand-text-block">
+          <span class="brand-en">SURYA DAKSHIN</span>
+          <span class="brand-mr">South Indian &bull; दक्षिणात्य</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link is-current">Menu Matrix</a></li>
+          <li><a href="about.html" class="nav-link">Our Heritage</a></li>
+        </ul>
+      </nav>
+
+      <a href="#menuGrid" class="btn btn-yellow">Browse Items</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="hero" style="padding: 48px 0 56px;">
+      <div class="container">
+        <span class="hero-kicker">Curated Dakshin Offerings</span>
+        <h1>The Complete Menu Matrix.</h1>
+        <p>
+          All tiffins are served fresh with stone-ground coconut chutney, roasted tomato chutney, and piping-hot drumstick sambar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+      <div class="container">
+        <!-- Interactive Category Filters -->
+        <div class="filter-bar">
+          <button class="filter-pill is-active" data-filter="all">All Items</button>
+          <button class="filter-pill" data-filter="tiffin">Morning Tiffin</button>
+          <button class="filter-pill" data-filter="dosas">Cast-Iron Dosas</button>
+          <button class="filter-pill" data-filter="meals">Dakshin Meals</button>
+          <button class="filter-pill" data-filter="beverages">Brews &amp; Drinks</button>
+        </div>
+
+        <!-- Full Menu Matrix Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Tiffin -->
+          <article class="item-card" data-category="tiffin">
+            <div class="item-top">
+              <h3 class="item-title">Steamed Thatte Idli</h3>
+              <span class="item-price">&#8377;60</span>
+            </div>
+            <p class="item-desc">Platter-sized steamed fermented rice cakes topped with desi ghee and spiced gunpowder podi.</p>
+            <div class="badge-row"><span class="badge">Steamed</span><span class="badge">Desi Ghee</span></div>
+          </article>
+
+          <article class="item-card" data-category="tiffin">
+            <div class="item-top">
+              <h3 class="item-title">Button Ghee Sambar Idli (12 Pcs)</h3>
+              <span class="item-price">&#8377;80</span>
+            </div>
+            <p class="item-desc">Mini steamed idlis submerged in rich, bubbling drumstick sambar garnished with fresh coriander and ghee.</p>
+            <div class="badge-row"><span class="badge">Sambar Dip</span><span class="badge">Bestseller</span></div>
+          </article>
+
+          <article class="item-card" data-category="tiffin">
+            <div class="item-top">
+              <h3 class="item-title">Medu Vada (2 Pcs)</h3>
+              <span class="item-price">&#8377;70</span>
+            </div>
+            <p class="item-desc">Golden crisp whole urad fritters spiced with black peppercorns, crushed ginger, and fresh curry leaves.</p>
+            <div class="badge-row"><span class="badge">Crisp</span><span class="badge">Tempered</span></div>
+          </article>
+
+          <article class="item-card" data-category="tiffin">
+            <div class="item-top">
+              <h3 class="item-title">Idli Vada Combo</h3>
+              <span class="item-price">&#8377;85</span>
+            </div>
+            <p class="item-desc">One classic steamed idli paired with one crisp medu vada, served with dual chutneys and sambar.</p>
+            <div class="badge-row"><span class="badge">Tiffin Combo</span></div>
+          </article>
+
+          <!-- Dosas -->
+          <article class="item-card" data-category="dosas">
+            <div class="item-top">
+              <h3 class="item-title">Davangere Benne Dosa</h3>
+              <span class="item-price">&#8377;110</span>
+            </div>
+            <p class="item-desc">Thick, golden crepe roasted on cast iron with pure white butter, served with aloo bhaji and coconut chutney.</p>
+            <div class="badge-row"><span class="badge">House Special</span><span class="badge">White Butter</span></div>
+          </article>
+
+          <article class="item-card" data-category="dosas">
+            <div class="item-top">
+              <h3 class="item-title">Ghee Karam Podi Roast</h3>
+              <span class="item-price">&#8377;120</span>
+            </div>
+            <p class="item-desc">Paper-thin crisp dosa layered with spiced red chili-garlic chutney paste and generous roasted desi ghee.</p>
+            <div class="badge-row"><span class="badge">Spicy</span><span class="badge">Desi Ghee</span></div>
+          </article>
+
+          <article class="item-card" data-category="dosas">
+            <div class="item-top">
+              <h3 class="item-title">Mysore Masala Dosa</h3>
+              <span class="item-price">&#8377;105</span>
+            </div>
+            <p class="item-desc">Crisp crepe lined with tangy Mysore red paste, filled with mild spiced potato crumble and fresh coriander.</p>
+            <div class="badge-row"><span class="badge">Classic</span></div>
+          </article>
+
+          <article class="item-card" data-category="dosas">
+            <div class="item-top">
+              <h3 class="item-title">Onion Rava Masala Dosa</h3>
+              <span class="item-price">&#8377;115</span>
+            </div>
+            <p class="item-desc">Lacy, crackling semolina crepe with browned onions, green chillies, and cumin seeds.</p>
+            <div class="badge-row"><span class="badge">Extra Crisp</span></div>
+          </article>
+
+          <!-- Meals -->
+          <article class="item-card" data-category="meals">
+            <div class="item-top">
+              <h3 class="item-title">Dakshin Special Thali</h3>
+              <span class="item-price">&#8377;160</span>
+            </div>
+            <p class="item-desc">Steamed Ponni rice, traditional sambar, rasam, kootu, poriyal, appalam, curd, pickle, and sweet payasam.</p>
+            <div class="badge-row"><span class="badge">Full Meal</span><span class="badge">Unlimited Rice</span></div>
+          </article>
+
+          <article class="item-card" data-category="meals">
+            <div class="item-top">
+              <h3 class="item-title">Bisi Bele Bath</h3>
+              <span class="item-price">&#8377;95</span>
+            </div>
+            <p class="item-desc">Slow-cooked rice, lentils, and mixed country vegetables spiced with traditional roasted masala and ghee.</p>
+            <div class="badge-row"><span class="badge">Comfort Meal</span></div>
+          </article>
+
+          <article class="item-card" data-category="meals">
+            <div class="item-top">
+              <h3 class="item-title">Thayir Sadam (Curd Rice)</h3>
+              <span class="item-price">&#8377;80</span>
+            </div>
+            <p class="item-desc">Cool set curd blended with mashed soft rice, tempered with mustard seeds, ginger, curry leaves, and pomegranate.</p>
+            <div class="badge-row"><span class="badge">Cooling</span></div>
+          </article>
+
+          <!-- Beverages -->
+          <article class="item-card" data-category="beverages">
+            <div class="item-top">
+              <h3 class="item-title">Kumbakonam Degree Coffee</h3>
+              <span class="item-price">&#8377;35</span>
+            </div>
+            <p class="item-desc">First-decoction coffee brewed with plantation Arabica and chicory, frothed in a brass davarah.</p>
+            <div class="badge-row"><span class="badge">Brass Davarah</span><span class="badge">Hot</span></div>
+          </article>
+
+          <article class="item-card" data-category="beverages">
+            <div class="item-top">
+              <h3 class="item-title">Spiced Neer Moru</h3>
+              <span class="item-price">&#8377;30</span>
+            </div>
+            <p class="item-desc">Cooling churned buttermilk tempered with roasted cumin, crushed green chillies, and ginger.</p>
+            <div class="badge-row"><span class="badge">Digestive</span></div>
+          </article>
+
+          <article class="item-card" data-category="beverages">
+            <div class="item-top">
+              <h3 class="item-title">Badam Milk (Hot / Cold)</h3>
+              <span class="item-price">&#8377;50</span>
+            </div>
+            <p class="item-desc">Slow-boiled cow milk infused with crushed almond paste, saffron strands, and cardamoms.</p>
+            <div class="badge-row"><span class="badge">Rich</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 4px;">SURYA DAKSHIN</strong>
+        <p>Station Road, Near Shivaji Chowk, Latur &bull; 413512</p>
+      </div>
+      <div>
+        <p>&copy; 2026 Surya Dakshin. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
